@@ -7,6 +7,7 @@ class Config {
   static const int pageSize = 10;
   static const String loginAPI = "/api/login";
   static const String registerAPI = "/api/register";
+  static const String sliderAPI = "/api/slider";
   static const String userProfileAPI = "/users/user-profile";
   static const String currency = "";
 }
