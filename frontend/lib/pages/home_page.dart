@@ -3,6 +3,7 @@ import 'package:shop/api/api_service.dart';
 import 'package:shop/services/shared_service.dart';
 import 'package:shop/widgets/widget_home_categories.dart';
 import 'package:shop/widgets/widget_home_products.dart';
+import 'package:shop/widgets/widget_home_slider.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -26,7 +27,11 @@ class HomePage extends StatelessWidget {
  */
       body: Container(
         child: ListView(
-          children: [const HomeCategoriesWidget(), const HomeProductWidget()],
+          children: const [
+            HomeSliderWidget(),
+            HomeCategoriesWidget(),
+            HomeProductWidget()
+          ],
         ),
       ),
     );
